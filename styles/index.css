@@ -1,0 +1,93 @@
+body {
+    background-color: rgb(94, 5, 5);
+    margin: 0;
+
+}
+
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.container {
+    border: 1px solid rgb(68, 20, 112);
+    background-color: rgb(175, 110, 110);
+    border-radius: 8px;
+    position: relative;
+    width: 468px;
+    height: 160px;
+    padding: 15px;
+    display: flex;
+    margin-top: 50px;
+    margin-left: 50px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.card {
+    background-color: rgb(3, 3, 58);
+    border: 5px solid rgb(75, 21, 126);
+    border-radius: 4px;
+    min-width: 78px;
+    min-height: 78px;
+    margin: 8px;
+    display: flex;
+    align-items: flex-end;
+
+}
+
+.first {
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.second .card {
+    align-self: stretch;
+}
+
+.third {
+    justify-content: flex-end;
+
+}
+
+.fourth {
+    justify-content: space-between;
+    align-items: flex-start;
+
+
+}
+
+.fourth .bottom {
+    align-self: flex-end
+}
+
+.fifth {
+    justify-content: space-evenly;
+    color: white;
+    text-align: center;
+}
+
+.fifth .middle {
+
+    align-self: stretch;
+
+}
+
+.fifth .card {
+    justify-content: center;
+    align-items: center;
+}
+
+.sixth {
+    justify-content: space-around;
+}
+
+.sixth .card.wide {
+    flex-grow: 2;
+
+}
